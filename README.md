@@ -8,7 +8,7 @@ Build Hakkasan頑張りましょう！
 
 # Instagram風古着アプリ
 
-特徴：	コミュニティ間での販売に特化した古着販売アプリ
+特徴：	コミュニティ間での販売に特化した古着販売アプリ([document](https://docs.google.com/document/d/10F7TJzt4l2YZn_thJIC3aNISrXHSrhQ5GY-Yr0GODUU/edit#))
 
 * 販売Userをフォローして、インスタのように写真を投稿
 * 実際にきていたりお洒落な写真が多いので購買意欲が湧く
@@ -17,28 +17,28 @@ Build Hakkasan頑張りましょう！
 
 
 今回作ろうと思うのは以下のデータベースです.
-![]()
+  
+![image1](https://github.com/NyatsuYAI/mercari_hakkasan_team1/blob/main/document/image.png)
+  
+# Hakkasan Goal
+  
+ #### Goal1
+  
+  それぞれの要求・返答に対応するAPIの実装
+ 
+ #### Goal2
+  
+  Reactを用いたInsta風アプリの開発
+ #### Goal3
+  
+  Dockerを使ったコンテナ型サーバーの設置
+  
+# 最後に
+  
+  短い時間ですが、自分達のできる範囲で、無理せずやりましょう！もしわからないことがあったら、１５分悩んで、答えが見つからなかったらすぐにSlackに連絡しましょう。
+  （引用：[Google](https://note.com/techtech_life/n/neae152a9fccf)）
 
-Build trainingの前半では個人で課題に取り組んでもらい、Web開発の基礎知識をつけていただきます。
-ドキュメントには詳細なやり方は記載しません。自身で検索したり、リファレンスを確認したり、チームメイトと協力して各課題をクリアしましょう。
-
-ドキュメントには以下のような記載があるので、課題を進める際に参考にしてください。
-
-In the first half of Build@Mercari program, you will work on individual tasks to understand the basics of web development. Detailed instructions are not given in each step of the program, and you are encouraged to use official documents and external resources, as well as discussing tasks with your teammates and mentors.
-
-The following icons indicate pointers for 
-
-**:book: Reference**
-
-* そのセクションを理解するために参考になるUdemyやサイトのリンクです。課題内容がわからないときにはまずReferenceを確認しましょう。
-* Useful links for Udemy courses and external resources. First check those references if you're feeling stuck.
-
-**:beginner: Point**
-
-* そのセクションを理解しているかを確認するための問いです。 次のステップに行く前に、**Point**の問いに答えられるかどうか確認しましょう。
-* Basic questions to understand each section. Check if you understand those **Points** before moving on to the next step.
-
-## Tasks
+## Task links
 
 - [ ] **STEP1** Git ([JA](document/step1.ja.md)/[EN](document/step1.en.md))
 - [ ] **STEP2** Setup environment ([JA](document/step2.ja.md)
