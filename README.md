@@ -7,13 +7,20 @@ Build Hakkasan頑張りましょう！
 私たちは、新しい古着の出品方法を考えました。
 
 # Instagram風古着アプリ
+  
+* アイデア元
+  （[Depop](https://www.depop.com/)）(フランスやアメリカで流行)
 
-特徴：	コミュニティ間での販売に特化した古着販売アプリ([document](document/d/10F7TJzt4l2YZn_thJIC3aNISrXHSrhQ5GY-Yr0GODUU/edit#))
-
+特徴：	コミュニティ間での販売に特化した古着販売アプリ
+  
 * 販売Userをフォローして、インスタのように写真を投稿
 * 実際にきていたりお洒落な写真が多いので購買意欲が湧く
 * 知人に限定したコミュニティを作れば、配送の必要が減る・面倒くさい気持ちが減少しそう
 * 商品を検索するよりも、ウィンドウショッピングのようにダラダラ見る
+  
+### 5/24 meeting
+  ([meeting document]([document/d/10F7TJzt4l2YZn_thJIC3aNISrXHSrhQ5GY-Yr0GODUU/edit#](https://docs.google.com/document/d/10F7TJzt4l2YZn_thJIC3aNISrXHSrhQ5GY-Yr0GODUU/edit?usp=sharing)))
+
 
 
 今回作ろうと思うのは以下のデータベースです.
