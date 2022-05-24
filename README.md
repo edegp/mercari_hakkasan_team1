@@ -8,7 +8,7 @@ Build Hakkasan頑張りましょう！
 
 # Instagram風古着アプリ
 
-特徴：	コミュニティ間での販売に特化した古着販売アプリ([document](https://docs.google.com/document/d/10F7TJzt4l2YZn_thJIC3aNISrXHSrhQ5GY-Yr0GODUU/edit#))
+特徴：	コミュニティ間での販売に特化した古着販売アプリ([document](document/d/10F7TJzt4l2YZn_thJIC3aNISrXHSrhQ5GY-Yr0GODUU/edit#))
 
 * 販売Userをフォローして、インスタのように写真を投稿
 * 実際にきていたりお洒落な写真が多いので購買意欲が湧く
