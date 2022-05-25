@@ -27,6 +27,8 @@ Build Hakkasan頑張りましょう！
   
 ![image1](https://github.com/NyatsuYAI/mercari_hakkasan_team1/blob/main/document/image2.png)
   
+ [データベース設計スライド](https://docs.google.com/presentation/d/1fScFIWayerjwBdOtrnCQODifX83ztHZ2Swwg2JufBWM/edit?usp=sharing)（随時更新）
+  
 # Hakkasan Goal
   
  #### Goal1
