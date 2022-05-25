@@ -1,7 +1,8 @@
+PRAGMA foreign_keys=true;
+
 CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT, 
-    name TEXT,
-    
+    name TEXT
 );
 
 CREATE TABLE IF NOT EXISTS items (
@@ -10,8 +11,9 @@ CREATE TABLE IF NOT EXISTS items (
     user_id INTEGER ,
     category TEXT,
     info TEXT,
-    timestamp INTEGER,
-    image TEXT 
+    timestamp TEXT,
+    image TEXT ,
+    foreign key (user_id) references users(id)
 );
 
 CREATE TABLE IF NOT EXISTS follows(
