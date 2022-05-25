@@ -50,12 +50,63 @@ def root():
     return {"message": "Hello, world!"}
 
 
+@app.get("/user")
+def get_user_id(user_name: str = Form(...)):
+    conn = sqlite3.connect(data_base_name)
+    cur = conn.cursor()
+    if cur.fetchone() == None:
+        logger.info(f"table not exists")
+        with open("../db/item.db") as schema_file:
+            schema = schema_file.read()
+            logger.debug("Read schema file.")
+        cur.executescript(f"""{schema}""")
+        conn.commit()
+    cur.execute("""select user_id from users where name = (?)""", user_name)
+    user_id = cur.fetchone()
+    cur.execute("""select * from items where user_id = (?)""", user_id)
+    items = cur.fetchall()
+    conn.commit()
+    conn.close()
+    logger.info("Get items")
+    return items
+
+
+@app.post("/items")
+def add_user_item(
+    user_name: str = Form(...),
+    item_name: str = Form(...),
+    category: str = Form(...),
+    info: str = Form(...),
+):
+    conn = sqlite3.connect(data_base_name)
+    cur = conn.cursor()
+    if cur.fetchone() == None:
+        logger.info(f"table not exists")
+        with open("../db/item.db") as schema_file:
+            schema = schema_file.read()
+            logger.debug("Read schema file.")
+        cur.executescript(f"""{schema}""")
+        conn.commit()
+    cur.execute("""select user_id from users where name = (?)""", user_name)
+    user_id = cur.fetchone()
+    cur.execute("""SELECT datetime('now', '+9 hours')""")
+    timestamp = cur.fetchone()
+    cur.execute(
+        """insert into items(user_id,category,info,timestamp) values (?,?,?,?)""",
+        (user_id, category, info, timestamp),
+    )
+    cur.execute("""select timestamp from items where name = (?)""", timestamp)
+    item = cur.fetchone()
+    conn.commit()
+    conn.close()
+    logger.info(f"Post item: {item}")
+
+
 @app.post("/items")
 def add_item(name: str = Form(...), category: str = Form(...), image: str = Form(...)):
     conn = sqlite3.connect(data_base_name)
     cur = conn.cursor()
     if cur.fetchone() == None:
-
         logger.info(f"table not exists")
         with open("../db/item.db") as schema_file:
             schema = schema_file.read()
@@ -98,7 +149,6 @@ def get_items():
 def init_item():
     conn = sqlite3.connect(data_base_name)
     cur = conn.cursor()
-
     cur.execute("""drop table items;""")
     cur.execute("""drop table category;""")
     conn.commit()
@@ -137,8 +187,6 @@ async def get_image(image_filename):
 
 @app.get("/items/{item_id}")
 def get_items_from_id(item_id):
-    conn = sqlite3.connect(data_base_name)
-    cur = conn.cursor()
     cur.execute(
         """select items.name,category.name as category,items.image from items inner join category on category.id = items.category_id where items.category_id = (?)""",
         (item_id,),
