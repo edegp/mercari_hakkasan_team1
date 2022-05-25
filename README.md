@@ -25,7 +25,7 @@ Build Hakkasan頑張りましょう！
 
 今回作ろうと思うのは以下のデータベースです.
   
-![image1](https://github.com/NyatsuYAI/mercari_hakkasan_team1/blob/main/document/image.png)
+![image1](https://github.com/NyatsuYAI/mercari_hakkasan_team1/blob/main/document/image2.png)
   
 # Hakkasan Goal
   
