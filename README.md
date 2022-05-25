@@ -19,7 +19,7 @@ Build Hakkasan頑張りましょう！
 * 商品を検索するよりも、ウィンドウショッピングのようにダラダラ見る
   
 ### 5/24 meeting
-  ([meeting document]([document/d/10F7TJzt4l2YZn_thJIC3aNISrXHSrhQ5GY-Yr0GODUU/edit#](https://docs.google.com/document/d/10F7TJzt4l2YZn_thJIC3aNISrXHSrhQ5GY-Yr0GODUU/edit?usp=sharing)))
+  ([meeting document](https://docs.google.com/document/d/10F7TJzt4l2YZn_thJIC3aNISrXHSrhQ5GY-Yr0GODUU/edit?usp=sharing))
 
 
 
